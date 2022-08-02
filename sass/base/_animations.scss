@@ -1,0 +1,42 @@
+/*for animation purpose*/
+@keyframes moveInLeft {
+  0% {
+    /*this is the start of animation(intial state)*/
+    opacity: 0; /*initially before the animation starts we want it to be 
+    invisible*/
+    transform: translateX(-10rem); /*since we want to animate in x direction*/
+  }
+  80% {
+    transform: translateX(1rem);
+  } /*we can also do 50%,80% since the animation starts*/
+  100% {
+    /*this is the finish of animation(final state)*/
+    opacity: 1;
+    transform: translate(0); /*it exactly looks as it is right now*/
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
